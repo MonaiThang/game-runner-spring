@@ -1,5 +1,10 @@
 package com.monaithang.gamerunner.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("SuperContra")
 public class SuperContraGame implements GamingConsole {
     public void down() {
         System.out.println("Duck down");

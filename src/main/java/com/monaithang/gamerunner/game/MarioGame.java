@@ -1,5 +1,10 @@
 package com.monaithang.gamerunner.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("Mario")
 public class MarioGame implements GamingConsole {
     public void down() {
         System.out.println("Dive down into pipe");
