@@ -1,6 +1,6 @@
 package com.monaithang.gamerunner.game;
 
-public class MarioGame {
+public class MarioGame implements GamingConsole {
     public void down() {
         System.out.println("Dive down into pipe");
     }
